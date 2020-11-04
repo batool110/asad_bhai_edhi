@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CodePen - Employee Account | Form Wizard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet'
+		href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500'>
+	<link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+	<!-- partial:index.partial.html -->
+	<section class="form-box">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-sm-7 col-sm-offset-1 form-wizard">
+			<!--	<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 form-wizard">-->
+
+					<!-- Form Wizard -->
+					<form role="form" action="" method="post">
+						<h3>Donation Form</h3>
+						<p>Fill all form field to go next step</p>
+
+						<!-- Form progress -->
+						<div class="form-wizard-steps form-wizard-tolal-steps-4">
+							<div class="form-wizard-progress">
+								<div class="form-wizard-progress-line" data-now-value="12.25" data-number-of-steps="4"
+									style="width: 12.25%;"></div>
+							</div>
+							<!-- Step 1 -->
+							<div class="form-wizard-step active">
+								<div class="form-wizard-step-icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+								<p>Personal</p>
+							</div>
+							<!-- Step 1 -->
+
+							<!-- Step 2 -->
+
+							<div class="form-wizard-step">
+								<div class="form-wizard-step-icon"><i class="fa fa-briefcase" aria-hidden="true"></i>
+								</div>
+								<p>Method</p>
+							</div>
+							<!-- Step 2 -->
+
+							<!-- Step 3 -->
+							<div class="form-wizard-step">
+								<div class="form-wizard-step-icon"><i class="fa fa-money" aria-hidden="true"></i>
+								</div>
+								<p>Payment</p>
+							</div>
+							<!-- Step 3 -->
+
+							<!-- Step 4 -->
+							<div class="form-wizard-step">
+								<div class="form-wizard-step-icon"><i class="fa fa-money" aria-hidden="true"></i></div>
+								<p>Preview&Card</p>
+							</div>
+							<!-- Step 4 -->
+						</div>
+						<!-- Form progress -->
+
+
+						<!-- Form Step 1 -->
+						<fieldset>
+
+							<h4>Personal Information: <span>Step 1 - 4</span></h4>
+
+							<div class="form-group">
+								<label>First Name: <span>*</span></label>
+								<input type="text" id="fname" name="First Name" placeholder="First Name" maxlength="15"
+									class="form-control required">
+							</div>
+							<div class="form-group">
+								<label>Last Name: <span>*</span></label>
+								<input type="text" id="lname" name="Last Name" placeholder="Last Name" maxlength="15"
+									class="form-control required">
+							</div>
+							<div class="form-group">
+								<label>Doner Email: <span>*</span></label>
+								<input type="email" id="email" pattern=".+@globex.com" name="email" placeholder="Email"
+									class="form-control required">
+							</div>
+							<div class="form-group">
+								<label>Post Code: <span>*</span></label>
+								<input type="number" id="postcode" name="postcode" placeholder="Post Code"
+									class="form-control required">
+							</div>
+
+							<!-- <div class="container-fluid">
+								<div class="row form-inline">
+								<div class="form-group col-md-3 col-xs-3">
+                                    <label>Date Of Birth: </label>
+								</div>
+								<div class="form-group col-md-3 col-xs-3">
+									<label>Date: </label>
+                                    <select class="form-control">
+									  <option>01</option>
+									  <option>02</option>
+									  <option>03</option>
+									  <option>04</option>
+									  <option>05</option>
+									</select>
+								</div>
+								<div class="form-group col-md-3 col-xs-3">
+									<label>Month: </label>
+                                    <select class="form-control">
+									  <option>Jan</option>
+									  <option>Feb</option>
+									  <option>Mar</option>
+									  <option>Apr</option>
+									  <option>May</option>
+									</select>
+								</div>
+								<div class="form-group col-md-3 col-xs-3">
+									<label>Year: </label>
+                                    <select class="form-control">
+									  <option>2017</option>
+									  <option>2018</option>
+									  <option>2019</option>
+									  <option>2020</option>
+									  <option>2021</option>
+									</select>
+								</div>
+                                </div>
+								</div>
+								<div class="form-group">
+                    			    <label>Maratial Status: </label>
+                                    <select class="form-control">
+										<option value="">Select Status ...</option>
+										<option value="Married">Married</option>
+										<option value="Divorced">Divorced</option>
+										<option value="Un-Married">Un-Married</option>
+										<option value="Widowed">Widowed</option>
+									</select>
+                                </div>
+                                <div class="form-group">
+                    			    <label>User Name: <span>*</span></label>
+                                    <input type="text" name="Username" placeholder="User Name" class="form-control required">
+                                </div>
+								<div class="form-group">
+                    			    <label>Password: <span>*</span></label>
+                                    <input type="password" name="Password" placeholder="User Password" class="form-control required">
+                                </div> -->
+							<div class="form-wizard-buttons">
+								<button type="button" id="btn1" class="btn btn-next" ">Next</button>
+							</div>
+						</fieldset>
+
+						<!-- Form Step 1 -->
+
+						<!-- Form Step 2 -->
+						<fieldset>
+
+							<h4>Method: <span>Step 2 - 4</span></h4>
+
+							<div class="form-group">
+
+
+								<div> <label>Donation Type: <span>*</span></label>
+									<select id="dtype" name="input_3"  class="form-control required"
+										aria-invalid="false">
+										<option value="" selected="selected" class="gf_placeholder">** Select Donation
+											Type **</option>
+										<option value="Pakistan Flood Relief Assistance">Pakistan Flood Relief
+											Assistance</option>
+										<option value="COVID-19-Cooked Meal">COVID-19-Cooked Meal</option>
+										<option value="COVID-19-Ration">COVID-19-Ration</option>
+										<option value="Ambulance fund">Ambulance fund</option>
+										<option value="Fight against hunger">Fight against hunger</option>
+										<option value="Rehabilitation Centers">Rehabilitation Centers</option>
+										<option value="Patient Care">Patient Care</option>
+										<option value="Home and Orphanage">Home and Orphanage</option>
+										<option value="Zakat">Zakat</option>
+										<option value="Sadaqah">Sadaqah</option>
+										<option value="Fitrana-10">Fitrana-10</option>
+										<option value="Fitrana-12">Fitrana-12</option>
+										<option value="Fitrana-15">Fitrana-15</option>
+										<option value="Fidya/Kuffara">Fidya/Kuffara</option>
+										<option value="Aqiqa">Aqiqa</option>
+										<option value="General Donation">General Donation</option>
+										<option value="Qurban">Qurban</option>
+									</select>
+								</div>
+
+
+
+
+							</div>
+							<div class="form-group">
+								<label>Enter Quantity: <span>*</span></label>
+								<input type="number" id="qty" name="Quantity" placeholder="Enter Quantity"
+									class="form-control required">
+							</div>
+
+							<div class="form-group">
+								<label>Enter Amount: <span>*</span></label>
+								<input type="number" id="amount" name="Enter Amount" placeholder="Enter Amount"
+									class="form-control required">
+							</div>
+
+
+							<li id="field_1_25"
+								class="gfield donation_table gfield_html field_sublabel_below field_description_below gfield_visibility_visible">
+									<div class="row" style="margin-bottom:10px">
+									<div class="col-md-12">
+										<button type="button" class="pull-right btn btn-success"  onclick="myCreateFunction()" >Add
+											Donation</button>
+									</div>
+								</div>
+								<table id="myTable" class="table preview-table" >
+									<thead>
+										<tr>
+											<th>Donation Type</th>
+											<th>Quantity</th>
+											<th>Amount</th>
+											<th>Total</th>
+											<th>Action</th>
+										</tr>
+									</thead>
+								  </table>
+							<!--	<table id="donation_table" class="table preview-table">
+									<thead>
+										<tr>
+											<th>Donation Type</th>
+											<th>Options</th>
+											<th>Quantity</th>
+											<th>Amount</th>
+											<th>Total</th>
+											<th>Action</th>
+										</tr>
+									</thead>
+									<tbody></tbody>
+								</table>-->
+								<br>
+								<label>Subtotal:</label><br>
+								<span class="subtotal_amt" id="subtotal">$ 0.00</span>
+							</li>
+
+							<br />
+							<div class="form-wizard-buttons">
+								<button type="button" class="btn btn-previous">Previous</button>
+								<button type="button" id="btn2" onclick="calculatetotal()" class="btn btn-next">Next</button>
+							</div>
+						</fieldset>
+						<!-- Form Step 2 -->
+
+						<!-- Form Step 3 -->
+						<fieldset>
+							<h4>Payment: <span>Step 3 - 4</span></h4>
+							<label>Payment Method : </label>
+							<div class="form-group">
+										<lable><input  type="radio" name="method" value="1" checked="checked"> Credit
+											Card </lable>
+										<br/>
+											<label><input type="radio"  value="0" name="method" > Pay with Paypal</label>
+							</div>
+							<div class="gfield_checkbox" id="input_1_16">
+								<input name="input_16.1" type="checkbox" value="Include Admin Fee (5.0%)"
+									checked="checked" id="choice_1_16_1">
+								<label for="choice_1_16_1" id="label_1_16_1">Include Admin Fee (5.0%)</label>
+							</div>
+							<br>
+							<div class="gfield_description" id="gfield_description_1_16">Please note admin fee is
+								optional. It is donors discretion to pay admin fee. By paying admin fee you are helping
+								in managing administration cost. (untick excluding admin fee)</div>
+
+							<div id="field_1_27"
+								class="gfield gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below field_description_below gfield_visibility_visible">
+								<label class="merchant_fee_label">Merchant Fee (1.5%)</label><br>
+								<span class="merchant_fee_amt">$ 0.00</span>
+								<input type="hidden" class="merchant_fee_amt_input" value="0.00"
+									name="merchant_fee_amt">
+								<input type="hidden" class="admin_fee_amt_input" value="0.00" name="admin_fee_amt">
+							</div>
+
+							<br>
+							<div class="form-group">
+								<label>Total Amount: <span>*</span></label>
+								<input type="number" id="totalamount" name="Total Amount" placeholder="Total Amount" 
+									class="form-control required" readonly="">
+							</div>
+
+							<br />
+
+							<br />
+							<div class="form-wizard-buttons">
+								<button type="button" class="btn btn-previous">Previous</button>
+								<button type="button" id="btn3" class="btn btn-next">Next</button>
+							</div>
+						</fieldset>
+						<!-- Form Step 3 -->
+						<!-- Form Step 4 -->
+						<fieldset>
+							<h4>Preview & Card: <span>Step 4 - 4</span></h4>
+							
+							<div class="form-group">
+								<label >First Name:</label>
+								<label id=lfname></label>
+							</div>
+							<div class="form-group">
+								<label >Last Name:</label>
+								<label id=llname></label>
+							</div>
+							<div class="form-group">
+								<label >Email Address:</label>
+								<label id=lemail></label>
+							</div>
+							<div class="form-group">
+								<label >Post Code:</label>
+								<label id=lpostcode></label>
+							</div>
+							<div class="form-group">
+								<label >Donation Type:</label>
+								<label id=ldonationtype></label>
+							</div>
+							<div class="form-group">
+								<label >Quantity:</label>
+								<label id=lQty></label>
+							</div>
+							
+							<div class="form-group">
+								<label >Amount:</label>
+								<label id=lamount></label>
+							</div>
+
+							<div class="form-group">
+								<label >Payment Method:</label>
+								<label id=lpaymentmethod></label>
+							</div>
+							<div class="form-group">
+								<label >Total Amount:</label>
+								<label id=ltotalamount></label>
+							</div>
+
+							<div class="form-wizard-buttons">
+								<button type="button" class="btn btn-previous">Previous</button>
+								
+							</div>
+						</fieldset>
+						<!-- Form Step 4 -->
+
+					</form>
+					<!-- Form Wizard -->
+				</div>
+				<div class="col-sm-1 "></div>
+				<div class="col-sm-4 details" >
+
+					<div class="wpb_wrapper" >
+						
+						<div><br/><div>
+							<img src="assets/img/new/logo.png"><br/><br/>
+						<p><strong>Payments can be made easily &amp; securely through bank deposits.</strong></p><br/>
+						<p><strong>BANK :</strong>&nbsp;WESTPAC<br>
+						<strong>ACCOUNT NAME :</strong>&nbsp;ABDUL SATTAR EDHI INTERNATIONAL FOUNDATION<br>
+						<strong>BSB :</strong>&nbsp;032-173<br>
+						<strong>ACCOUNT NO :</strong>&nbsp;526867</p>
+						<hr>
+						<p><strong>BANK :</strong>&nbsp;ANZ<br>
+						<strong>ACCOUNT NAME :</strong>&nbsp;ABDUL SATTAR EDHI INTERNATIONAL FOUNDATION<br>
+						<strong>BSB :</strong>&nbsp;012-003<br>
+						<strong>ACCOUNT NO :</strong>&nbsp;2555-31858</p>
+						<p><strong>For tax invoice, please send bank deposit details to email address&nbsp;<a href="mailto:edhi@edhi.org.au">edhi@edhi.org.au</a></strong></p>
+					</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		
+	</section>
+	<!-- partial -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+	<script src="./script.js"></script>
+	
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CodePen - Employee Account | Form Wizard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet'
+		href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500'>
+	<link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+
+
+
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
+            <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                <h2 id="heading">VOLUNTEER APPLICATION</h2>
+                <p>Fill all form field to go to next step</p>
+                <form id="msform">
+                    <!-- progressbar -->
+                    <ul id="progressbar">
+                        <li class="active" id="account"><strong>Personal</strong></li>
+                        <li id="personal"><strong>Skills</strong></li>
+                        
+                        <li id="confirm"><strong>Emergency</strong></li>
+                        <li id="payment"><strong>Image</strong></li>
+                    </ul>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div> <br> <!-- fieldsets -->
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="row">
+                                <div class="col-7">
+                                    <h2 class="fs-title">Volunteer Information:</h2>
+                                </div>
+                                <div class="col-5">
+                                    <h2 class="steps">Step 1 - 4</h2>
+                                </div>
+                            </div> <label class="fieldlabels">Name: <span class="sterick">*</span></label> <input type="name" name="name" placeholder="Name" />
+                            <label class="fieldlabels">Street Address: <span class="sterick">*</span></label> <input type="text" name="address" placeholder="StreetAddress" />
+                            
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="fieldlabels">City: <span class="sterick">*</span></label><input type="text" name="city" placeholder="City" />
+                                </div>
+                                <div class="col-6">
+                                    <label class="fieldlabels">State: <span class="sterick">*</span></label> <input type="text" name="state" placeholder="State" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="fieldlabels">Zip/Postal Code: <span class="sterick">*</span></label><input type="text" name="postalcode" placeholder="Zip" />
+                                </div>
+                                <div class="col-6">
+                                    <label class="fieldlabels">Country: <span class="sterick">*</span></label> <input type="text" name="country" placeholder="Country" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="fieldlabels">Contact Number: <span class="sterick">*</span></label> <input type="name" name="econtactnumber" placeholder="(123) 456-7890" />
+                                </div>
+                                <div class="col-6">
+                                    <label class="fieldlabels">Email: <span class="sterick">*</span></label> <input type="name" name="email" placeholder="Email@example.com" />
+                                </div>
+                            </div>
+
+
+                            
+                        </div> <input type="button" name="next" class="next action-button" value="Next" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="row">
+                                <div class="col-7">
+                                    <h2 class="fs-title">Availability</h2>
+                                </div>
+                                <div class="col-5">
+                                    <h2 class="steps">Step 2 - 4</h2>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="bottomline" style="display: flex;">
+                                
+                                <label class="container fontsizee">Weekday
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="radiomark"></span>
+                                  </label>
+                                  <label class="container fontsizee">Weekend
+                                    <input type="radio" name="radio">
+                                    <span class="radiomark"></span>
+                                  </label>
+                                  
+                                 </div>
+                                 
+                                 <br/>
+                                 <h2 class="fs-title">Interests</h2>
+                        <div style="display: flex">
+                        
+                    <label class="container fontsizee">Administration
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="container fontsizee">Events
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label></div>
+                          <div style="display: flex">
+                          <label class="container fontsizee">Field work
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                          
+                          <label class="container fontsizee">Fundraising
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label></div>
+                          <div style="display: flex">
+                          <label class="container fontsizee">Newsletter production
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="container fontsizee">Volunteer coordination
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label></div>
+                          <br/>
+                          <h2 class="fs-title">Previous Volunteer Experience</h2>
+                          
+                          <input type="text" name="experience" style="height: 100px;" maxlength="100"/>
+                          
+                          <h2 class="fs-title">Special Skills Or Qualifications</h2>
+                          
+                          <input type="text" name="skills" style="height: 100px;" maxlength="100"/>
+
+                        </div> <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+
+
+
+                            <div class="row">
+                                <div class="col-9">
+                                    <h2 class="fs-title">Person To Contact In Emergency</h2>
+                                </div>
+                                <div class="col-3">
+                                    
+                                    <h2 class="steps">Step 3 - 4</h2>
+                                </div>
+                            </div> 
+
+                            <label class="fieldlabels">Name: <span class="sterick">*</span></label> <input type="name" name="ename" placeholder="Name" />
+                            <label class="fieldlabels">Email: <span class="sterick">*</span></label> <input type="email" name="eemail" placeholder="Email@example.com" />
+
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="fieldlabels">Contact Number: <span class="sterick">*</span></label> <input type="name" name="econtactnumber" placeholder="(123) 456-7890" />
+                                </div>
+                                <div class="col-6">
+                                    <label class="fieldlabels">State: <span class="sterick">*</span></label> <input type="name" name="estate" placeholder="State" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="fieldlabels">Country: <span class="sterick">*</span></label> <input type="name" name="ecountry" placeholder="Country" />
+                                </div>
+                                <div class="col-6">
+                                    <label class="fieldlabels">Postal Code: <span class="sterick">*</span></label> <input type="name" name="epostalcode" placeholder="Postal Code" />
+                                </div>
+                            </div>
+
+                    </div> <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                    
+                    
+                    
+                    
+                    </fieldset>
+
+
+                    <fieldset>
+                        <div class="form-card">
+                            
+                        
+                            <div class="row">
+                                <div class="col-7">
+                                    <h2 class="fs-title">Image Upload:</h2>
+                                </div>
+                                <div class="col-5">
+
+
+
+                                    <h2 class="steps">Step 4 - 4</h2>
+                                </div>
+                            </div>
+
+                            <label class="fieldlabels">Upload Your Photo:</label> <input type="file" name="pic" accept="image/*"> <label class="fieldlabels">Upload Signature Photo:</label> <input type="file" name="pic" accept="image/*">
+                      
+                        
+                        
+                        
+                        
+                        </div>
+                    <input type="button" name="next" class="next action-button" value="Submit" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+
+
+
+                        <!--
+                            <label class="fieldlabels">Contact Number: *</label> <input type="number" name="econtactnumber" placeholder="(123) 456-7890" />
+                            <label class="fieldlabels">State: *</label> <input type="name" name="estate" placeholder="State" />
+                            <label class="fieldlabels">Country: *</label> <input type="name" name="ecountry" placeholder="Country" />
+                            <label class="fieldlabels">Postal Code: *</label> <input type="name" name="epostalcode" placeholder="Postal Code" />
+                           -->
+                    </fieldset>
+                    
+
+
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="row">
+                                <div class="col-7">
+                                    <h2 class="fs-title">Finish:</h2>
+                                </div>
+                                <div class="col-5">
+                                    <h2 class="steps">Finish</h2>
+                                </div>
+                            </div> <br><br>
+                            <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
+                            <div class="row justify-content-center">
+                                <div class="col-3"> <img src="../assets/success.png" class="fit-image"> </div>
+                            </div> <br><br>
+                            <div class="row justify-content-center">
+                                <div class="col-7 text-center">
+                                    <h5 class="purple-text text-center">You Have Successfully Applied</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+	<script src="./script.js"></script>
+</body>
+</html>
